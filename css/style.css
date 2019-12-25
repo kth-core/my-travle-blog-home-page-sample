@@ -1,0 +1,610 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+body {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+  line-height: inherit;
+  letter-spacing: -1px;
+}
+
+h2 {
+  color: #393939;
+  font-size: 2em;
+}
+
+h3 {
+  color: #505050;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+h4 {
+  color: #696969;
+  font-size: 18px;
+  line-height: normal;
+}
+
+/*--- General ---*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #252525;
+  font-weight: normal;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+
+a:hover, a:active, a:focus {
+  color: #ce3232;
+  outline: none;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+.section-title .line-bar {
+  color: #d9d9d9;
+  display: block;
+  font-size: 5em;
+  line-height: 0;
+}
+
+.section-btn {
+  background: #ce3232;
+  border: 0;
+  border-radius: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-btn:hover,
+.section-btn:focus {
+  background: #00F260;
+  background: linear-gradient(to right, #0575E6, #00F260);
+  border-color: transparent;
+  color: #393939;
+}
+
+p{
+  font-weight: normal;
+  font-size: 14px;
+  color: #757575;
+  line-height: 25px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.overlay {
+  background: #00F260;
+  background: linear-gradient(to right, #0575E6, #00F260);
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+/*--- Menu ---*/
+
+.custom-navbar {
+  border: none;
+  margin-bottom: 0;
+  padding: 25px 0;
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.top-nav-collapse {
+  background: #ffffff;
+}
+
+.top-nav-collapse .section-btn {
+  color: #ffffff;
+}
+
+.custom-navbar .navbar-nav.navbar-nav-first {
+  margin-left: 8em;
+}
+
+.custom-navbar .navbar-nav.navbar-nav-first li a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.custom-navbar .navbar-nav.navbar-nav-right li a {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.custom-navbar .section-btn {
+  padding: 0px;
+  margin-left: 2em;
+}
+
+.custom-navbar .section-btn:hover {
+  background: #000000;
+  background: linear-gradient(to right, #434343, #000000);
+
+}
+
+.custom-navbar .nav .section-btn a:hover {
+  color: #ffffff;
+}
+
+.custom-navbar .nav li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+  .custom-navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #ce3232;
+  }
+
+  .custom-navbar .nav li.active > a {
+    background-color: transparent;
+    color: #ce3232;
+  }
+  .custom-navbar .navbar-toggle {
+      border: none;
+      padding-top: 10px;
+  }
+
+.custom-navbar .navbar-toggle {
+  background-color: transparent;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+  background: #252525;
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+
+  .custom-navbar {
+    border-bottom: 0;
+    background: 0 0; 
+  }
+
+  .custom-navbar.top-nav-collapse {
+    background: #ffffff;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+  }
+
+  .top-nav-collapse .navbar-brand {
+    color: #252525;
+  }
+
+  .top-nav-collapse .nav li a {
+    color: #575757;
+  }
+
+  .top-nav-collapse .nav .section-btn a {
+    color: #ffffff;
+  }
+}
+
+/*--- Home --- */
+
+#home {
+  background: url('../images/San-enjoying-a-tricycle-ride-in-Dala-Village.jpg') no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10em;
+  text-align: left;
+}
+
+#home h1 {
+  color: #ffffff;
+}
+
+.home-info .section-btn {
+  background: transparent;
+  border: 2px solid #f9f9f9;
+  color: #f9f9f9;
+
+}
+
+.home-info .section-btn:hover,
+.home-info .section-btn:focus {
+  background: #ce3232;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.home-info span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #f9f9f9;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.home-info span em {
+  display: block;
+}
+
+/*--- About ---*/
+
+#about {
+  text-align: left;
+  padding-bottom: 0;
+}
+#about .about-info:first-child {
+  margin-right: 40px;
+}
+
+.about-info .section-title {
+  margin: 40px 0 40px 0;
+}
+.about-info {
+  margin-top: 60px;
+}
+
+.skill-thumb strong {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.skill-thumb span {
+  float: right;
+}
+
+.skill-thumb .progress {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: none;
+  height: 3px;
+  margin-bottom: 25px;
+}
+
+.skill-thumb .progress-bar {
+  background: #1f1f1f;
+  box-shadow: none;
+}
+
+/*--- Blog ---*/
+
+#blog {
+  background: #f0f0f0;
+}
+
+.blog-thumb {
+  background: #ffffff;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-align: left;
+  margin-bottom: 30px;
+  height: 350px;
+}
+
+.media.blog-thumb .media-left {
+  width: 45%;
+}
+
+.blog-thumb small {
+  color: #ce3232;
+  font-weight: 500;
+  display: block;
+}
+
+.blog-thumb small .fa {
+  margin-right: 5px;
+}
+.blog-info {
+  padding: 75px 25px;
+}
+
+.blog-info h3 {
+  margin: 0;
+  padding: 8px 0 6px 0;
+  text-transform: capitalize;
+}
+
+.blog-info .section-btn {
+  background: #f0f0f0;
+  color: #393939;
+  margin-top: 20px;
+}
+
+.blog-info .section-btn:hover {
+  background: #00F260;
+  background: linear-gradient(to right, #0575E6, #00F260);
+  color: #ffffff;
+}
+
+/*--- Work ---*/
+
+#life-style .life-style-thumb {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.life-style-thumb .life-style-info {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.life-style-thumb .life-style-info::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  content: "";
+  background: #ce3232;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.life-style-thumb .life-style-info:hover::after {
+  opacity: 0.9;
+}
+
+.life-style-thumb .life-style-info h3,
+.life-style-thumb .life-style-info small {
+  transform: translateY(100%);
+  opacity: 0;
+  display: block;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+.life-style-thumb .life-style-info small {
+  color: #d9d9d9;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+.life-style-thumb:hover .life-style-info h3,
+.life-style-thumb:hover .life-style-info small {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*--- Contact ---*/
+
+#contact {
+  background: #00F260;
+  background: linear-gradient(to right, #0575E6, #00f260);
+}
+
+#contact .section-title h2 {
+  color: #ffffff;
+}
+
+#contact .form-control {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  color: rgba(20, 20, 20, 0.5);
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  padding-left: 8px;
+}
+
+#contact input[type=submit] {
+  background: #ce3232;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/*--- Footer  ---*/
+
+footer {
+  background: #434343;
+  background: linear-gradient(to right, #434343, #000000);
+  position: relative;
+}
+
+footer p, footer span {
+  color: #d9d9d9;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-bottom .social-icon, .footer-bottom span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-bottom span {
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+/*--- Social Icon ---*/
+
+.social-icon {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: noen;
+}
+
+.social-icon li a {
+  color: #d9d9d9;
+  margin: 5px 10px;
+}
+
+.social-icon li a:hover {
+  color: #ce3232;
+}
+
+/*--- Responsive ---*/
+
+@media (max-width: 991px) {
+  #life-style .life-style-thumb,
+    .footer-thumb {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+@media (max-width: 1170px) {
+  .custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: inherit;
+  }
+}
+
+@media (max-width: 991px) {
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  #home {
+    text-align: center;
+  }
+
+  .home-info {
+    margin-bottom: 3em;
+  }
+
+  .custom-navbar .nav li a {
+    font-size: 13px;
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .custom-navbar .section-btn {
+    margin-left: 1em;
+  }
+
+  .blog-thumb {
+    height: inherit;
+  }
+}
+
+
+  @media (max-width: 767px) {
+    .custom-navbar {
+      background: #ffffff;
+      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      padding: 10xp 0;
+    }
+
+    .custom-navbar .nav li a {
+      line-height: normal;
+      padding: 5px;
+      color: #252525;
+    }
+
+    .custom-navbar .navbar-brand,
+    .top-nav-collapse .navbar-brand {
+      color: #252525;
+      font-weight: 600;
+    }
+
+    .custom-navbar .nav li a:hover,
+    .top-nav-collapse .nav li a:focus {
+      color: #ce3232;
+    }
+    
+    .custom-navbar .navbar-nav.navbar-right li {
+      display: inline-block;
+    }
+
+    .custom-navbar .section-btn {
+      display: block !important;
+      width: 20%;
+      margin: 10px auto 10px auto;
+      padding: 10px;
+    }
+
+    .custom-navbar .section-btn a {
+      color: #ffffff !important;
+    }
+
+    .home-info span {
+      margin-top: 20px;
+    }
+
+    #about .about-info:first-child {
+      margin-right: 0;
+    }
+
+    .about-info {
+      margin: 40px 0 40px 0;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+  }
